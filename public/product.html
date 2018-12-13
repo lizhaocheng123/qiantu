@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>商品页</title>
+	<link rel="stylesheet" href="./css/product.css">
+ </head>
+ <body>
+		<nav>
+			<a href="index.html"><img src="./img/logo1.2.png" id="logo"></a>
+			<div id="input-top">
+				<input type="text" placeholder="9,600,200免费设计素材任意下载" id="textSearch">
+				<a href="#"><img src="./img/search.png" class="search-img"></a>
+			</div>
+			<div class="float">
+				<ul>
+					<li><a href="register.html" class="res1" target="_blank">注册</a></li>
+					<li><a href="login.html" class="res2" target="_blank">登录</a></li>
+					<li><a href="#" class="VIP1">上传</a></li>
+					<li><a href="#" class="VIP2">VIP</a></li>
+				</ul>
+				<div style="clear:both;"></div>
+			</div>
+			<hr>
+		</nav>
+		<div id="jianting">
+		<header class="header">
+			<div class="btm" id="btm">
+				<div class="float1">
+					<img :src="res[0].img" class="suolve">
+					<h1 v-html="res[0].title"></h1>
+					<p>
+						流畅圆润的线条，概括式的轮廓，不饱和缺高浓度的对比色搭配，加以斑驳的质感，产生一种OLD-SCHOOL既视感。
+					</p>
+					<img src="./img/6402ad4563a93ecf2d76978869d1208f2" class="xiaotu">
+					<span>千小喵</span>
+					<div></div>
+					<img src="./img/xz.png" class="xiaotu1">
+					<span class="span1">
+						16,468&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京时间：{{time}}
+					</span>
+					<a href="#" class="shoucangjia"></a>
+					<span class="span3">关注收藏夹</span>
+					<span class="span2">分享到</span>
+				</div>
+			</div>
+		</header>
+		<div id="asd">
+			<div><a href="#" class="aa">签到</a></div>
+			<div><a href="#" class="ab">客服</a></div>
+			<div><a href="#" class="ac">反馈</a></div>
+			<div id="asdd"><a href="#" class="ad"></a></div>
+		</div>
+		<section class="section">
+			<div class="sy1">
+				<ul>
+					<li id="sy11">
+						<a href="details.html">
+							<img :src="res[1].img" class="img4">
+							<p v-html="res[1].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>	
+					</li>
+					<li  id="sy12">
+						<a href="#">
+							<img :src="res[2].img" class="img4">
+							<p v-html="res[2].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>					
+					</li>
+					<li  id="sy13">
+						<a href="#">
+							<img :src="res[3].img" class="img4">
+							<p v-html="res[3].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>					
+					</li>
+					<li  id="sy14">
+						<a href="#">
+							<img :src="res[4].img" class="img4">
+							<p v-html="res[4].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sy2">
+				<ul>
+					<li id="sy21">
+						<a href="#">
+							<img :src="res[5].img" class="img4">
+							<p v-html="res[5].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>	
+					</li>
+					<li id="sy22">
+						<a href="#">
+							<img :src="res[6].img" class="img4">
+							<p v-html="res[6].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>					
+					</li>
+					<li id="sy23">
+						<a href="#">
+							<img :src="res[7].img" class="img4">
+							<p v-html="res[7].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>					
+					</li>
+					<li id="sy24">
+						<a href="#">
+							<img :src="res[8].img" class="img4">
+							<p v-html="res[8].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sy3">
+				<ul>
+					<li id="sy31">
+						<a href="#">
+							<img :src="res[9].img" class="img4">
+							<p v-html="res[9].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>	
+					</li>
+					<li id="sy32">
+						<a href="#">
+							<img :src="res[10].img" class="img4">
+							<p v-html="res[10].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>					
+					</li>
+					<li id="sy33">
+						<a href="#">
+							<img :src="res[11].img" class="img4">
+							<p v-html="res[11].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>					
+					</li>
+					<li id="sy34">
+						<a href="#">
+							<img :src="res[12].img" class="img4">
+							<p v-html="res[12].title"></p>
+							<div><span>VIP免费下载<span></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+		<aside class="aside">
+			<div id="toTop">
+				<a id="a1" href="#">返回顶部</a>
+			</div>
+				<div style="clear:both;"></div>
+		</aside>
+		<div class="fenye">
+				<ul>
+					<li><a href="#" class="sm1">01</a></li>
+					<li><a href="page2.html" class="sm2">02</a></li>
+					<li><a href="#" class="lg">下一页</a></li>
+				</ul>
+			</div>
+		<footer class="footer">
+			<div class="ft1">
+				<div class="ft2">
+					<ul>
+						<li>常见问题</li>
+						<li>关于千图网</li>
+						<li>产品服务</li>
+						<li>友情链接</li>
+					</ul>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="ft3">
+					<ul>
+						<li><a href="#">成为特邀设计师</a></li>
+						<li><a href="#">注册登录</a></li>
+						<li><a href="#">账号/密码</a></li>
+						<li><a href="#">充值/售后</a></li>
+						<li><a href="#">版权投诉</a></li>
+					</ul>
+				</div>
+				<div class="ft4">
+					<ul>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">心系千图</a></li>
+						<li><a href="#">Q群联盟</a></li>
+					</ul>
+				</div>
+				<div class="ft5">
+					<ul>
+						<li><a href="#">官方博客</a></li>
+						<li><a href="#">帮助中心</a></li>
+					</ul>
+				</div>
+				<div class="ft6">
+					<ul>
+						<li><a href="#">我图网</a></li>
+						<li><a href="#">千库网</a></li>
+						<li><a href="#">摄图网</a></li>
+						<li><a href="#">虎课网</a></li>
+						<li><a href="#">爱集网</a></li>
+						<li><a href="#">更多>></a></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</div>
+				<div>
+					<h3>客服咨询</h3>
+				</div>
+				<div>
+					<div class="ft8">400-9987011&nbsp;&nbsp;(9:30-18:30)</div>
+				</div>	
+				<div>
+					<div class="ft9">feedback@58pic.com</div>
+				</div>
+				<div>
+					<a href="#"><input type="buttom" class="talk" placeholder="点我交谈"></a>
+				</div>
+			</div>
+		</footer>
+		<hr class="hr">
+		<div class="end">
+			<ul>
+				<li><a href="#">注册声明</a></li>
+				<li><a href="#">版权声明</a></li>
+				<li><a href="#">售后服务</a></li>
+			</ul>
+			<div class="bq">
+				<p>
+					Copyright&copy;2013-2018&nbsp;千图网&nbsp;沪ICP备10011451号-6
+				</p>
+			</div>
+			<div class="td1">
+				<ul>
+					<li>
+						上海工商
+					</li>
+					<li>
+						安全实名验证
+					</li>
+					<li>
+						信用网站
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			window.onscroll=function(){
+      var scrollTop=document.body.scrollTop
+        ||document.documentElement.scrollTop
+      if(scrollTop>=500){
+		toTop.style.display="block";
+		asdd.style.display="none";
+	  }else{
+		toTop.style.display="none";
+		asdd.style.display="block";
+	  }
+    }
+    a1.onclick=function(e){
+      e.preventDefault();
+      window.scrollTo(0,0);
+    }
+	</script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/product.js"></script>
+	<script src="js/vue.js"></script>
+ </body>
+</html>

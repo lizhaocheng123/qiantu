@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+	<link rel="stylesheet" href="./css/index.css">
+ </head>
+ <body >
+		<header id="header">
+			<div id="main">
+				<div id="header-top">
+					<img src="./img/logo1.2.png" id="logo">
+				</div>
+				<div id="pd">
+					<div id="parent">
+						<a href="#" class="a1">设计创意</a>
+						<div id="child1">
+							<a href="#">平面广告</a>
+							<a href="#">电商淘宝</a>
+							<a href="#">装饰装修</a>
+							<a href="#">网页UI</a>
+							<a href="#">视频音效</a>
+							<a href="#">产品工业</a>
+							<a href="#">高清图库</a>
+							<a href="#">背景</a>
+							<a href="#">设计元素</a>
+						</div>
+					</div>
+					<div id="parent">
+						<a href="#" class="a1">办公创意</a>
+						<div id="child2">
+							<a href="page2.html">PPT模板</a>
+							<a href="#">Excel模板</a>
+							<a href="#">文库模板</a>
+							<a href="#">简历模板</a>
+							<a href="#">Word范围</a>
+							<a href="#">云简历</a>
+						</div>
+					</div>
+					<div id="parent">
+						<a href="#" class="a1">正版商用</a>
+					</div>
+					<div id="parent">
+						<a href="#" class="a1">创意趋势</a>
+					</div>
+					<div id="parent">
+						<a href="#" class="a1">...</a>
+						<div id="child3">
+							<a href="#">活动</a>
+							<a href="#">每日更新</a>
+							<a href="#">Q群联盟</a>
+							<a href="#">设计工具</a>
+							<a href="#">样机专区</a>
+						</div>
+					</div>	
+				</div>
+				<div>
+					<ul>
+						<li><a href="register.html" class="res1" target="_blank">注册</a></li>
+						<li><a href="login.html" class="res2" target="_blank">登录</a></li>
+						<li><a href="#" class="VIP1">上传</a></li>
+						<li><a href="#" class="VIP2">VIP</a></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+		</header>
+			<hr>
+			<div id="area">
+				<div class="float">
+					<a href="#" target="_blank"><img src="./img/icon4.png" class="search-img1"></a>
+					<a href="#" target="_blank"><img src="./img/icon-billboard.gif" class="search-img2"></a>
+				</div>
+				<div id="input-top">
+					<input type="text" placeholder="9,600,200免费设计素材任意下载" id="textSearch">
+					<a href="#" class="sort-search">分类</a>
+					<a href="#"><img src="./img/search.png" class="search-img"></a>
+					<a href="#"><i class="caret"></i></a>
+					<p style="clear:both;"></p>
+				</div>
+				<div id="list">
+					<ul>
+						<li class="li1">热门收索:</li>
+						<li class="li">中秋</li>
+						<li>开学季</li>
+						<li>图标</li>
+						<li>招聘</li>
+						<li class="li">秋天你好</li>
+						<li>星空</li>
+						<li>治愈插画</li>
+						<li class="li">教师节</li>
+						<li>建档ppt</li>
+						<li>99聚星节</li>
+					</ul>
+				</div>
+				<div style="clear:both;"></div>
+		</div>
+		<div id="asd">
+			<div><a href="#" class="aa">签到</a></div>
+			<div><a href="#" class="ab">客服</a></div>
+			<div><a href="#" class="ac">反馈</a></div>
+			<div id="asdd"><a href="#" class="ad"></a></div>
+		</div>
+		<div id="banner">
+			<a href="page1.html">
+				<img src="img/5b92a2106ea3f.jpg" class="slide">
+				<img src="img/5b7e4e41ec97d.png">
+				<img src="img/5b8ffff425229.jpg">			
+				<img src="img/5b8f80ad123cc.jpg">		
+				<img src="img/5b90cd44d36a8.jpg">			
+				<img src="img/5b90fe6bb4ef1.jpg">
+			</a>
+			<div class="bn">
+				<img id="bn1">
+				<img id="bn2">
+				<img id="bn3">
+				<img id="bn4">
+				<img id="bn5">
+				<img id="bn6">
+			</div>
+		</div>
+		<section class="section">
+			<div>
+				<P>精品收藏夹</P>
+				<ul>
+					<li><a href="#">二十四节气</a></li>
+					<li><a href="#">优秀设计师</a></li>
+					<li><a href="#">手机配图</a></li>
+					<li><a href="#">PPT精选</a></li>
+					<li><a href="#">招聘</a></li>
+				</ul>
+				<a href="#" id="duo">更多>></a>
+				<div style="clear:both;"></div>
+			</div>
+			<div>
+				<div class="b1">
+					<a href="product.html">
+						<img :src="res[0].img" class="img3">	
+						<div>
+							<p></p>
+							<h3 v-html="res[0].title"></h3>
+						</div>
+					</a>
+				</div>
+			</div>	
+			<div>
+				<div class="q1">
+					<a href="page1.html">
+						<img :src="res[1].img" class="img3 ml" >
+						<div>
+							<p></p>
+							<h3 v-html="res[1].title"></h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div>
+				<div class="w1">
+					<a href="page1.html">
+						<img :src="res[2].img"  class="img3 m2" >
+						<div>
+							<p></p>
+							<h3 v-html="res[2].title"></h3>
+						</div>
+					</a>
+				</div>
+			<div>
+				<div class="e1">
+					<a href="page1.html">
+						<img :src="res[3].img"  class="img3">
+						<div>
+							<p></p>
+							<h3 v-html="res[3].title"></h3>
+						</div>
+					</a>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="sy">
+				<span>商用海报</span>
+				<ul>
+					<li><a href="#">旅游海报</a></li>
+					<li><a href="#">招聘海报</a></li>
+					<li><a href="#">美食海报</a></li>
+					<li><a href="#">节日海报</a></li>
+					<li><a href="#">促销海报</a></li>
+				</ul>
+				<a href="#" id="duo1">更多>></a>
+				<div style="clear:both;"></div>	
+			</div>
+			<div class="sy1">
+				<ul>
+					<li class="pg1">
+						<a href="page1.html">
+							<img :src="res[4].img" class="img4 ">
+							<p v-html="res[4].title"></p>
+						</a>
+					</li>
+					<li class="pg2">
+						<a href="page1.html">
+							<img :src="res[5].img" class="img4">
+							<p v-html="res[5].title"></p>
+						</a>
+					</li>
+					<li class="pg3">
+						<a href="page1.html">
+							<img :src="res[6].img" class="img4">
+							<p v-html="res[6].title"></p>
+						</a>
+					</li>
+					<li class="pg4">
+						<a href="page1.html">
+							<img :src="res[7].img" class="img4">
+							<p v-html="res[7].title"></p>
+						</a>
+					</li>
+				</ul>
+				<div style="clear:both;"></div>
+			</div>
+		</section>
+		<div id="tj">向您推荐</div>
+		<footer class="footer">
+			<hr class="hr1">
+			<div class="ft1">
+				<div class="ft2">
+					<ul>
+						<li>常见问题</li>
+						<li>关于千图网</li>
+						<li>产品服务</li>
+						<li>友情链接</li>
+					</ul>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="ft3">
+					<ul>
+						<li><a href="#">成为特邀设计师</a></li>
+						<li><a href="#">注册登录</a></li>
+						<li><a href="#">账号/密码</a></li>
+						<li><a href="#">充值/售后</a></li>
+						<li><a href="#">版权投诉</a></li>
+					</ul>
+				</div>
+				<div class="ft4">
+					<ul>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">心系千图</a></li>
+						<li><a href="#">Q群联盟</a></li>
+					</ul>
+				</div>
+				<div class="ft5">
+					<ul>
+						<li><a href="#">官方博客</a></li>
+						<li><a href="#">帮助中心</a></li>
+					</ul>
+				</div>
+				<div class="ft6">
+					<ul>
+						<li><a href="#">我图网</a></li>
+						<li><a href="#">千库网</a></li>
+						<li><a href="#">摄图网</a></li>
+						<li><a href="#">虎课网</a></li>
+						<li><a href="#">爱集网</a></li>
+						<li><a href="#">更多>></a></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</div>
+				<div>
+					<h3>客服咨询</h3>
+				</div>
+				<div>
+					<div class="ft8">400-9987011&nbsp;&nbsp;(9:30-18:30)</div>
+				</div>	
+				<div>
+					<div class="ft9">feedback@58pic.com</div>
+				</div>
+				<div>
+					<a href="#"><input type="buttom" class="talk" placeholder="点我交谈"></a>
+				</div>
+			</div>
+		</footer>
+		<div class="end">
+			<hr>
+			<ul>
+				<li><a href="#">注册声明</a></li>
+				<li><a href="#">版权声明</a></li>
+				<li><a href="#">售后服务</a></li>
+			</ul>
+			<div class="bq">
+				<p>
+					Copyright&copy;2013-2018&nbsp;千图网&nbsp;沪ICP备10011451号-6
+				</p>
+			</div>
+			<div class="td1">
+				<ul>
+					<li>
+						上海工商
+					</li>
+					<li>
+						安全实名验证
+					</li>
+					<li>
+						信用网站
+					</li>
+				</ul>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<aside class="aside">
+			<div id="toTop">
+				<a id="a1" href="#">返回顶部</a>
+			</div>
+		</aside>
+		<script>
+			function task(){
+				var img=banner.querySelector(".slide")
+				img.className="";
+				var next=img.nextElementSibling;
+				if(next!=null)
+				 next.className="slide";
+				else
+				img.parentNode.children[0].className="slide"
+			}
+			var timer=setInterval(task,3000)
+			banner.onmouseover=function(){
+			clearInterval(timer)
+			}
+			banner.onmouseout=function(){
+			timer=setInterval(task,3000)
+			}
+			window.onscroll=function(){
+			 var scrollTop=document.body.scrollTop
+        	||document.documentElement.scrollTop
+			 if(scrollTop>=500){
+				toTop.style.display="block";
+				asdd.style.display="none";
+			 }else{
+				toTop.style.display="none";
+				asdd.style.display="block"
+			 }
+			}
+			 a1.onclick=function(e){
+				e.preventDefault();
+			 window.scrollTo(0,0);
+			}
+			
+		</script>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/vue.js"></script>
+ </body>
+</html>

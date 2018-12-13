@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>详情页</title>
+	<link rel="stylesheet" href="./css/details.css">
+ </head>
+ <body>
+	<nav>
+		<a href="index.html"><img src="./img/logo1.2.png" id="logo"></a>
+		<div id="input-top">
+			<input type="text" placeholder="9,600,200免费设计素材任意下载" id="textSearch">
+			<a href="#"><img src="./img/search.png" class="search-img"></a>
+		</div>
+		<div class="float">
+			<ul>
+				<li><a href="register.html" class="res1" target="_blank">注册</a></li>
+					<li><a href="login.html" class="res2" target="_blank">登录</a></li>
+					<li><a href="#" class="VIP1">上传</a></li>
+					<li><a href="#" class="VIP2">VIP</a></li>
+			</ul>
+		<div style="clear:both;"></div>
+		</div>
+		<hr>
+	</nav>
+	<div id="jianting">
+		<header class="header">
+			<div class="header-top"><h2>复古肌理原创插画教师节海报</h2></div>
+			<div class="header-top-left">
+				<p v-html="res[0].title"><a href="#"><span>点击了解详情&nbsp;&gt;&gt;</span></a></p>
+				<div class="top-left"><img :src="res[0].img"></div>
+			</div>
+			<div class="header-top-right">
+				<ul>
+					<li>编号：32191944</li>
+					<li>尺寸：3543×4724像素</li>
+					<li>体积：146.739 MB</li>
+					<li>授权方式：<a href="#">VRF协议</a> (可商用)</li>
+					<li>版权所有：@千图网下载&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">企业授权协议</a></li>
+				</ul>
+				<ul class="header-top-right1">
+				<li>模式：RGB</li>
+				<li>分辨率：150dpi</li>
+				</ul>
+				<div class="xiazai">
+				<div><a href="#">VIP免费下载</a></div>
+				</div>
+				<div class="zuozhe">
+					<img src="./img/defaultface_v2.png">
+					<p>Catha</p>
+					<span>广东&nbsp;|&nbsp;设计师</span>
+					<a href="#">关注</a>
+					<p class="zuopin">TA的相关作品</p>
+					<p class="gengduo"><a href="#" class="ziti">查看更多</a></p>
+				</div>
+				<div class="zuopinji">
+					<ul class="zuopin1">
+						<li class="zuopin11"><img src="./img/webp(14)"><div>原创海报</div></li>
+						<li class="zuopin12"><img src="./img/webp(15)"><div>原创海报</div></li>
+						<li class="zuopin13"><img src="./img/webp(16)"><div>原创海报</div></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="biaoqian">
+					<ul>
+						<li><a href="#">复古肌理</a></li>
+						<li><a href="#">感恩教师</a></li>
+						<li><a href="#">黑板</a></li>
+						<li><a href="#">教师</a></li>
+						<li><a href="#">教师节</a></li>
+						<li><a href="#">教师</a></li>
+						<li><a href="#">老师</a></li>
+						<li><a href="#">书本</a></li>
+					</ul>
+				</div>
+				<div class="clear:both;"></div>
+			</div>
+		</header>
+		<div id="asd">
+			<div><a href="#" class="aa">签到</a></div>
+			<div><a href="#" class="ab">客服</a></div>
+			<div><a href="#" class="ac">反馈</a></div>
+			<div id="asdd"><a href="#" class="ad"></a></div>
+		</div>
+		<section class="section">
+			<p class="tou">您可能在找这些：</p>	
+			<div class="sy1" data-toggle="qietu">
+				<ul>
+					<li>
+						<a href="#">
+							<img :src="res[1].img" class="img4">
+							<p v-html="res[1].title"></p>
+						</a>	
+					</li>
+					<li>
+						<a href="#">
+							<img :src="res[2].img" class="img4">
+							<p v-html="res[2].title"></p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img :src="res[3].img" class="img4">
+							<p v-html="res[3].title"></p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img :src="res[4].img" class="img4">
+							<p v-html="res[4].title"></p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sy2">
+				<ul>
+					<li>
+						<a href="#">
+							<img :src="res[5].img" class="img4">
+							<p v-html="res[5].title"></p>
+						</a>	
+					</li>
+					<li>
+						<a href="#">
+							<img :src="res[6].img" class="img4">
+							<p v-html="res[6].title"></p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img :src="res[7].img" class="img4">
+							<p v-html="res[7].title"></p>
+						</a>					
+					</li>
+					<li>
+						<a href="#">
+							<img :src="res[8].img" class="img4">
+							<p v-html="res[8].title"></p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<hr>
+			<div class="section-botton">
+				<div class="tabs">
+					<ul id="tab">
+						<li><a data-toggle="tab" href="#content2">热门素材</a></li>
+						<li><a data-toggle="tab" href="#content1">相关推荐</a></li>
+						<li><a data-toggle="tab" href="#content3">友情链接</a></li>
+					</ul>
+					<div class="clear:both;"></div>
+					<div class="container">
+						<div id="content1">
+							<a href="#">ppt模板</a>
+							<a href="#">汽车标志大全</a>
+							<a href="#">玫瑰图</a>
+							<a href="#">茶花插画</a>
+							<a href="#">人物插画</a>
+							<a href="#">插画背景</a>
+							<a href="#">复古底纹</a>
+							<a href="#">插画人物</a>
+							<a href="#">卡通插画</a>	
+						</div>
+						<div id="content3">
+							<a href="#">摄图网</a>
+							<a href="#">花瓣网</a>
+							<a href="#">我图网</a>
+							<a href="#">百度图片</a>
+							<a href="#">虎课网</a>
+							<a href="#">爱集网</a>
+							<a href="#">蜂鸟网</a>
+							<a href="#">图片之家</a>
+						</div>
+						<div id="content2">
+							<a href="#">插画背景</a>
+							<a href="#">复古背景</a>
+							<a href="#">原创星空图</a>
+							<a href="#">大海图片</a>
+							<a href="#">人物插画</a>
+							<a href="#">插画背景</a>
+							<a href="#">复古底纹</a>
+							<a href="#">插画人物</a>
+							<a href="#">卡通插画</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+	</div>
+		<aside class="aside">
+			<div id="toTop">
+				<a id="a1" href="#">返回顶部</a>
+			</div>
+			<div id="msg">
+				<p>X</p>
+				<span>白天不懂夜的黑</span>
+			</div>
+			<div style="clear:both;"></div>
+		</aside>
+		<footer class="footer">
+			<div class="ft1">
+				<div class="ft2">
+					<ul>
+						<li>常见问题</li>
+						<li>关于千图网</li>
+						<li>产品服务</li>
+						<li>友情链接</li>
+					</ul>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="ft3">
+					<ul>
+						<li><a href="#">成为特邀设计师</a></li>
+						<li><a href="#">注册登录</a></li>
+						<li><a href="#">账号/密码</a></li>
+						<li><a href="#">充值/售后</a></li>
+						<li><a href="#">版权投诉</a></li>
+					</ul>
+				</div>
+				<div class="ft4">
+					<ul>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">心系千图</a></li>
+						<li><a href="#">Q群联盟</a></li>
+					</ul>
+				</div>
+				<div class="ft5">
+					<ul>
+						<li><a href="#">官方博客</a></li>
+						<li><a href="#">帮助中心</a></li>
+					</ul>
+				</div>
+				<div class="ft6">
+					<ul>
+						<li><a href="#">我图网</a></li>
+						<li><a href="#">千库网</a></li>
+						<li><a href="#">摄图网</a></li>
+						<li><a href="#">虎课网</a></li>
+						<li><a href="#">爱集网</a></li>
+						<li><a href="#">更多>></a></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</div>
+				<div>
+					<h3>客服咨询</h3>
+				</div>
+				<div>
+					<div class="ft8">400-9987011&nbsp;&nbsp;(9:30-18:30)</div>
+				</div>	
+				<div>
+					<div class="ft9">feedback@58pic.com</div>
+				</div>
+				<div>
+					<a href=""><input type="buttom" class="talk" placeholder="点我交谈"></a>
+				</div>
+			</div>
+		</footer>
+		<hr class="hr">
+		<div class="end">
+			<ul>
+				<li><a href="#">注册声明</a></li>
+				<li><a href="#">版权声明</a></li>
+				<li><a href="#">售后服务</a></li>
+			</ul>
+			<div class="bq">
+				<p>
+					Copyright&copy;2013-2018&nbsp;千图网&nbsp;沪ICP备10011451号-6
+				</p>
+			</div>
+			<div class="td1">
+				<ul>
+					<li>
+						上海工商
+					</li>
+					<li>
+						安全实名验证
+					</li>
+					<li>
+						信用网站
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			var msg=document.getElementById("msg")
+			window.onload=function(){
+				msg.style.bottom="0"
+			}
+			msg.children[0].onclick=function(){
+				msg.style.bottom="-200px"
+				setTimeout(function(){
+					msg.style.bottom="0"
+				},10000)
+			}
+			window.onscroll=function(e){
+				e.preventDefault()
+     		 var scrollTop=document.body.scrollTop
+        	||document.documentElement.scrollTop
+      		if(scrollTop>=500){
+			toTop.style.display="block";
+			asdd.style.display="none";
+	  	}else{
+			toTop.style.display="none";
+			asdd.style.display="block";
+	  	}
+  	  }
+  		  a1.onclick=function(e){
+     	 e.preventDefault();
+     	 window.scrollTo(0,0);
+    }
+	</script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/details.js"></script>
+	<script src="js/vue.js"></script>
+ </body>
+</html>

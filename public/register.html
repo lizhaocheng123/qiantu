@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>注册</title>
+	<link rel="stylesheet" href="./css/register.css">
+ </head>
+ <body >
+		<div class="header">
+			<div class="top-left">
+				<ul>
+					<li><a href="index.html" id="a1"><img src="./img/logo3.png"></a></li>
+					<li><a href="#" id="a2">注册</a></li>
+				</ul>
+			</div>
+			<div class="top-right">
+					<ul>
+						<li><a href="register.html" class="res1">注册</a></li>
+						<li><a href="login.html" class="res2" target="blank">登录</a></li>
+						<li><a href="#" class="VIP1">上传</a></li>
+						<li><a href="#" class="VIP2">VIP</a></li>
+					</ul>
+					<div style="clear:both;"></div>
+				</div>
+		</div>
+		<div class="middle">
+			<div>
+				<img src="./img/5b4da03074528.jpg">
+				<div class="float">
+					<div class="middle-top">
+						<div><a href="login.html" class="a3" target="blank">登录</a></div>
+						<div><a href="register.html" class="a4">注册</a></div>
+					</div>
+					<div class="middle-md">
+						<div id="b1">用户名称：<input type="text" id="uname" placeholder="请输入用户名称" maxLength="10" onblur="checkUname()" required><span id="showuname"></span></div>
+						<div id="b2">用户密码：<input type="password" id="upwd" placeholder="请输入6位数数字或字母" maxLength="6" required></div>
+						<div id="b4">联系方式：<input type="text"  id="phone" maxLength="11" placeholder="请输入11位有效数字" required></div>
+						<div id="b5">真实姓名：<input type="text" id="user_name" placeholder="真实姓名" required></div>
+						<div id="b3"><input type="button" value="注册" onclick="register()"></div>
+					</div>
+					<div class="middle-mc">
+						<ul>
+							<li><a href="#">QQ登录</a></li>
+							<li><a href="#">微信登录</a></li>
+							<li><a href="#">微博登录</a></li>
+						</ul>
+					</div>
+					<div class="middle-bt">
+						<div>支持海外手机获取验证码</div>
+					</div>
+					<div class="middle-bm">
+						<ul>
+							<li><a href="#">手机验证码登录</a></li>
+							<li>|</li>
+							<li><a href="#">忘记密码</a></li>
+						</ul>
+					</div>
+					<div class="middle-tb">
+						<br>
+						<ul>
+							<li id="l1"><input type="checkbox" checked></li>
+							<li>勾选代表你同意</li>
+							<li>《注册声明》</li>
+							<li>《版权声明》</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<br>
+			<hr>
+			<p>Copyright &copy 2018千图网 沪ICP备10011451号-6</p>
+		</div>
+		<script src="common.js"></script>
+		<script>
+			var isRegister=false;
+			function checkUname(){ //验证用户名是否重复
+			var xhr=createXhr();
+			xhr.onreadystatechange=function(){
+				if (xhr.readyState==4&&xhr.status==200){
+					var res=xhr.responseText;
+					if (res==1){
+						isRegister=false;
+						//alert("用户名已存在")
+						$("showuname").innerHTML = "用户名已存在";
+					} else{
+						isRegister=true;
+						//alert("用户名可用")
+						$("showuname").innerHTML = "用户名可用";
+					}
+				}
+			}
+			var uname=$("uname").value;
+			xhr.open("get","/user/showuname?uname="+uname,true);
+			xhr.send(null);
+		}
+			function register(){
+				if (isRegister == true) {
+					var xhr=createXhr();
+					xhr.onreadystatechange=function(){
+					if(xhr.readyState==4&&xhr.status==200){
+						var res=xhr.responseText;
+						if(res==1){
+							alert("注册成功");
+							location.href="http://localhost:3000/login.html"
+						}else if(res=0){
+							alert("注册失败");
+						}
+					}
+				}
+				}
+				var uname=$("uname").value;
+				var upwd=$("upwd").value;
+				var phone=$("phone").value;
+				var user_name=$("user_name").value;
+				xhr.open("get","/user/register?uname="+uname+"&upwd="+upwd+'&phone='+phone+'&user_name='+user_name,true);
+				xhr.send(null);
+				}
+		</script>
+ </body>
+</html>

@@ -1,0 +1,96 @@
+$(function(){
+    $.ajax({
+        url:"http://localhost:3000/product/product",
+        type:"get",
+        dataType:"json",
+        success:function(res){
+            var vm=new Vue({
+                el:"#jianting",
+                data:{res,
+                     time:new Date().toLocaleString()
+                }
+            })
+            setInterval(function(){
+                vm.time=new Date().toLocaleString()
+              },1000);
+ $("#sy11").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy11").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy12").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy12").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy13").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy13").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy14").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy14").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy21").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy21").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy22").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy22").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy23").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy23").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy24").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy24").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy31").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy31").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy32").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy32").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy33").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy33").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$("#sy34").mouseenter(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","block")
+})
+$("#sy34").mouseleave(function(){
+    $(this).children(":nth-child(1)").children(":nth-child(3)").css("display","none")
+})
+$(".xiaotu").mouseenter(function(){
+    $(this).attr("src","./img/ad7947d59c285dc45442547629f636712")
+})
+$(".xiaotu").mouseleave(function(){
+    $(this).attr("src","./img/6402ad4563a93ecf2d76978869d1208f2")
+})
+        }
+    })
+})
